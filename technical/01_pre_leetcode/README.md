@@ -4,11 +4,11 @@ This is a list of topics one should master *before* attempting to drill LeetCode
 
 Once the tools are mastered, the solutions become much more obvious, though still require practice of course.
 
-This is the list that I used, but it is not exhaustive by any means. I consider it the bare minimum to solve LeetCode easy and medium problems confortably. It is also going to
+This is the list that I used, but it is not exhaustive by any means. I consider it the bare minimum to solve LeetCode easy and medium problems confortably which will be the vast majority of code challenges in interviews.
 
 ## Containers
 
-This may seem like a lot of containers, but the majority of them have similar interfaces. Know how to construct them, utilize their iterators, and be able to discuss their tradeoffs.
+This may seem like a lot of containers, but the majority of them have similar interfaces. Know how to construct them, utilize their iterators, and be able to discuss their tradeoffs regarding time and space complexity.
 
 ### Sequential Containers
 
@@ -28,12 +28,16 @@ This may seem like a lot of containers, but the majority of them have similar in
 
 - std::set
 - std::unordered_set
+- std::multiset
+- std::unordered_multiset
 - std::map
 - std::unordered_map
+- std::multimap
+- std::unordered_multimap
 
 ### Graphs and Trees
 
-- linked list-based tree
+- node-based
 - adjacency list
 - weighted adjacency list
 - adjacency matrix
@@ -71,8 +75,8 @@ These are the bare, essential algorithms and techniques to master.
 
 ```mermaid
 graph TD;
-Arrays/Hashing-->Two_Pointers;
-Arrays/Hashing-->Stack;
+Arrays+Hashing-->Two_Pointers;
+Arrays+Hashing-->Stack;
 Two_Pointers-->Binary_Search;
 Two_Pointers-->Sliding_Window;
 Two_Pointers-->Linked_List;
