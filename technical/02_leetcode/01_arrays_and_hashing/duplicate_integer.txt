@@ -1,0 +1,18 @@
+class Solution
+{
+public:
+    bool hasDuplicate(vector<int> const& nums)
+    {
+        unordered_set<int> hash_set;
+        for (int const n : nums)
+        {
+            if (hash_set.find(n) != hash_set.end())
+            {
+                return true;
+            }
+            hash_set.insert(n);
+        }
+
+        return false;
+    }
+};
