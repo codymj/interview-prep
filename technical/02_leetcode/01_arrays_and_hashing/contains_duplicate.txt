@@ -2,17 +2,17 @@
 // https://leetcode.com/problems/contains-duplicate
 
 func containsDuplicate(nums []int) bool {
-    // map to store elements:
+    // Map to store elements.
     seen := make(map[int]struct{})
 
-    // iterate over array
+    // Iterate over array.
     for _, e := range nums {
-        // check if current element is already in map
+        // Check if current element is already in map.
         if _, exists := seen[e]; exists {
             return true
         }
 
-        // add element to map
+        // Add element to map.
         seen[e] = struct{}{}
     }
 
