@@ -6,42 +6,42 @@ Once the tools are mastered, the solutions become more obvious, though still req
 
 This is the list that I used, but it is not exhaustive by any means. I consider it the bare minimum to solve LeetCode easy and medium problems confortably which will be the vast majority of code challenges in interviews.
 
-## Sequential Containers
+## Containers
 
-### std::vector
+### Sequential
 
-- v.push_back(e)
-- v.pop_back(e)
-- auto e = v.front()
-- auto e = v.back()
-- v.clear()
-- auto e = v.at(i)
+Storage of elements in a linear sequence.
 
-### std::list
+- `std::vector`
+- `std::list`
+- `std::deque`
 
-- l.push_back(e)
-- l.push_front(e)
-- l.pop_back()
-- l.pop_front()
-- l.insert(std::const_iterator, e)
-- auto e = l.front()
-- auto e = l.back()
+### Associative
 
-### std::deque
+Implemented with red-black trees; efficient for searching and retrieval.
 
-- d.push_back(e)
-- d.pop_back()
-- d.push_front(e)
-- d.pop_front()
-- auto e = d.front()
-- auto e = d.back()
-- auto e = d.at(i)
+- `std::set`
+- `std::map`
 
-## `TODO` Associative Containers
+### Unordered
 
-## `TODO` Unordered Containers
+Implemented as a hash table leading to average-case constant time access.
 
-## `TODO` Adapted Containers
+- `std::unordered_set`
+- `std::unordered_map`
+
+### Adapted
+
+Containers for specialized functionality.
+
+- `std::stack`
+- `std::queue`
+- `std::priority_queue`
+- `std::string`*
+
+\* Not technically a container, but important nonetheless.
+
+## `TODO` Iterators
 
 ## `TODO` Algorithms and Techniques
 
