@@ -1,0 +1,29 @@
+// 49. Group Anagrams
+// https://leetcode.com/problems/group-anagrams
+
+class Solution
+{
+public:
+	vector<vector<string>> groupAnagrams(vector<string>& strs)
+	{
+		unordered_map<string,vector<string>> um{};
+		for (auto const& s : strs)
+		{
+			// Sort the string and use it as map key.
+			string key = s;
+			sort(key.begin(), key.end());
+
+			// If sorted string = key, it's an anagram.
+			um[key].push_back(s);
+		}
+
+		// Create the answer, adding all of the anagram collections.
+		vector<vector<string>> ans{};
+		for (auto const& pair : um)
+		{
+			ans.push_back(pair.second);
+		}
+
+		return ans;
+	}
+};
