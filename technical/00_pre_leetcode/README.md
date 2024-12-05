@@ -47,20 +47,23 @@ Containers for specialized functionality.
 
 These are the bare, essential algorithms and techniques to master.
 
+### Searching
+
+- binary search
+- breadth-first search
+- depth-first search
+
+### Traversal
+
+- pre-order traversal
+- in-order traversal
+- post-order traversal
+
 ### Sorting
 
 - merge sort
 - insertion sort
 - quick sort
-
-### Searching and Traversal
-
-- binary search
-- breadth-first search
-- depth-first search
-- pre-order traversal
-- in-order traversal
-- post-order traversal
 
 ### Techniques
 
@@ -74,8 +77,8 @@ These are the bare, essential algorithms and techniques to master.
 
 ```mermaid
 graph TD;
-Arrays+Hashing-->Two_Pointers;
-Arrays+Hashing-->Stack;
+Arrays/Hashing-->Two_Pointers;
+Arrays/Hashing-->Stack;
 Two_Pointers-->Binary_Search;
 Two_Pointers-->Sliding_Window;
 Two_Pointers-->Linked_List;
