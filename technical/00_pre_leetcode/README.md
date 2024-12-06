@@ -58,6 +58,7 @@ These are the bare, essential algorithms and techniques to master.
 - pre-order traversal
 - in-order traversal
 - post-order traversal
+- level-order traversal
 
 ### Sorting
 
