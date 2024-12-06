@@ -1,0 +1,123 @@
+/*
+ * Depth-first Search (DFS)
+ *
+ * Used to traverse a graph structure from an initial node to all nodes that are
+ * reachable from the starting node using graph edges. Time complexity is O(V+E)
+ * where V is the number of vertices and E is the number of edges. Space
+ * complexity is O(V).
+ *
+ * There are four ways to implement DFS:
+ * 1. Recursively with an adjacency list
+ * 2. Iteratively with an adjacency list
+ * 3. Recursively with graph nodes
+ * 4. Iteratively with graph nodes
+ */
+
+// 1. Recursively with an adjacency list ---------------------------------------
+std::vector<std::vector<int>> graph;
+std::vector<bool> visited;
+void dfs(int node)
+{
+	if (visited[node])
+	{
+		return;
+	}
+	visited[node] = true;
+
+	std::cout << node << std::endl;
+
+	for (auto neighbor : graph[node])
+	{
+		dfs(neighbor);
+	}
+}
+
+// 2. Iteratively with an adjacency list ---------------------------------------
+std::vector<std::vector<int>> graph;
+std::vector<bool> visited;
+std::stack<int> stack;
+void dfs(int node)
+{
+	stack.push(node);
+
+	while (!stack.empty())
+	{
+		int current = stack.top();
+		stack.pop();
+
+		if (!visited[current])
+		{
+			visited[current] = true;
+
+			std::cout << current << std::endl;
+
+			for (int neighbor : graph[current])
+			{
+				if (!visited[neighbor])
+				{
+					stack.push(neighbor);
+				}
+			}
+		}
+	}
+}
+
+// 3. Recursively with graph nodes ---------------------------------------------
+struct Node
+{
+	int value;
+	std::vector<Node*> neighbors;
+};
+std::unordered_set<Node*> visited;
+void dfs(Node* node)
+{
+	if (!node || visited.count(node))
+	{
+		return;
+	}
+	visited.insert(node);
+
+	std::cout << node->value << std::endl;
+
+	for (Node* neighbor : node->neighbors)
+	{
+		dfs(neighbor);
+	}
+}
+
+// 4. Iteratively with graph nodes ---------------------------------------------
+struct Node
+{
+	int value;
+	std::vector<Node*> neighbors;
+};
+std::unordered_set<Node*> visited;
+std::stack<Node*> stack;
+void dfs(Node* node)
+{
+	if (start)
+	{
+		stack.push(start);
+	}
+
+	while (!stack.empty())
+	{
+		Node* current = stack.top();
+		stack.pop();
+
+		if (!visited.count(current))
+		{
+			visited.insert(node);
+
+			std::cout << node->value << std::endl;
+
+			for (Node* neighbor : current->neighbors)
+			{
+				if (!visited.count(neighbor))
+				{
+					stack.push(neighbor);
+				}
+			}
+		}
+	}
+}
