@@ -6,7 +6,7 @@
  * where V is the number of vertices and E is the number of edges. Space
  * complexity is O(V).
  *
- * There are four ways to implement DFS:
+ * Four ways to implement DFS:
  * 1. Recursively with an adjacency list
  * 2. Iteratively with an adjacency list
  * 3. Recursively with graph nodes
