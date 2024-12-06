@@ -1,10 +1,17 @@
 # Pre-LeetCode
 
-This is a list of topics one should master *before* attempting to drill LeetCode problems. Trying to solve LeetCode problems without these tools is a waste of time. You will end up trying to memorize solutions rather than memorizing the tools required to derive the solutions — it is much easier to memorize the tools.
+This is a list of topics one should master *before* attempting to drill LeetCode
+problems. Trying to solve LeetCode problems without these tools is a waste of
+time. You will end up trying to memorize solutions rather than memorizing the
+tools required to derive the solutions — it is much easier to memorize the
+tools.
 
-Once the tools are mastered, the solutions become more obvious, though still require practice of course.
+Once the tools are mastered, the solutions become more obvious, though still
+require practice of course.
 
-This is the list that I used, but it is not exhaustive by any means. I consider it the bare minimum to solve LeetCode easy and medium problems confortably which will be the vast majority of code challenges in interviews.
+This is the list that I used, but it is not exhaustive by any means. I consider
+it the bare minimum to solve LeetCode easy and medium problems confortably which
+will be the vast majority of code challenges in interviews.
 
 ## Containers
 
