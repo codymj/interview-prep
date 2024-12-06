@@ -62,19 +62,11 @@ These are the bare, essential algorithms and techniques to master.
 
 ### Sorting
 
-- merge sort
-- insertion sort
-- quick sort
+- merge sort (recursive)
+- quick sort (in-place)
+- counting sort
 
-### Techniques
-
-- backtracking
-- divide and conquer
-- dynamic programming
-- bit manipulation
-- dijkstra's algorithm
-
-### Roadmap
+## Roadmap
 
 ```mermaid
 graph TD;
@@ -89,4 +81,7 @@ Trees-->Heap/Priority_Queue;
 Trees-->Backtracking;
 Backtracking-->Graphs;
 Backtracking-->Dynamic_Programming;
+Dynamic_Programming-->Bit_Manipulation;
+Heap/Priority_Queue-->Intervals;
+Heap/Priority_Queue-->Greedy;
 ```
