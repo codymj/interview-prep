@@ -60,7 +60,7 @@ These are the bare, essential algorithms and techniques to master.
 - breadth-first search
 - depth-first search
 
-### Traversal
+### Traversal (binary trees)
 
 - pre-order traversal
 - in-order traversal
