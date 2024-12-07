@@ -4,7 +4,8 @@ Level-order traversal visits nodes level by level, starting from the root, then
 moving to all nodes at the next level, and so on. It uses a queue to process
 nodes in breadth-first order.
 
-This traversal is commonly used for tasks like finding the shortest path in an unweighted tree.
+This traversal is commonly used for tasks like finding the shortest path in an
+unweighted tree.
 
 ```c++
 struct Node {
