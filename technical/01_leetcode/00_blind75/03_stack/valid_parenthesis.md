@@ -11,7 +11,7 @@ An input string is valid if:
 
 Constraints:
 
-* `1 <= s.length <= 104`
+* `1 <= s.length <= 10^4`
 * `s consists of parentheses only '()[]{}'`
 
 ## Solution
