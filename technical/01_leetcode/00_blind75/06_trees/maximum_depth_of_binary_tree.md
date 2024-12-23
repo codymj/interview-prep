@@ -27,10 +27,13 @@ Constraints:
 class Solution {
 public:
     int maxDepth(TreeNode* root) {
+        // Don't add height if the node doesn't exist.
         if (!root) {
             return 0;
         }
 
+        // Traverse each side of subtree and add current node to the max height
+        // between the left and right subtrees.
         return 1 + std::max(
             maxDepth(root->left),
             maxDepth(root->right)
