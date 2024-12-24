@@ -28,24 +28,18 @@ Constraints:
 class Solution {
 public:
     bool isSameTree(TreeNode* p, TreeNode* q) {
-        // Null checks.
-        if (!p && !q) {
-            return true;
-        }
-        else if ((!p && q) || (!q && p)) {
+        if (!p || !q) {
+            // Null checks.
+            return !p && !q;
+        } else if (p->val == q->val) {
+            // Ensure subtrees are equal.
+            return(
+                isSameTree(p->left, q->left) &&
+                isSameTree(p->right, q->right)
+            );
+        } else {
             return false;
         }
-
-        // Value check.
-        if (p->val != q->val) {
-            return false;
-        }
-
-        // Ensure subtrees are equal.
-        return (
-            isSameTree(p->left, q->left) &&
-            isSameTree(p->right, q->right)
-        );
     }
 };
 ```
