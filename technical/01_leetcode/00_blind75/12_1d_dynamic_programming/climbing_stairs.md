@@ -25,6 +25,8 @@ public:
             return 0;
         }
 
+        // Calculate the Fibonacci numbers up to the nth one.
+        // Using a bottom-up approach for efficient memory usage.
         int prevFib = 0, currFib = 1, newFib = 0;
         for (int i=1; i<n; ++i) {
             newFib = prevFib + currFib;
